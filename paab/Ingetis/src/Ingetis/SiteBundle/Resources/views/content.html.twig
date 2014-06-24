@@ -1,0 +1,29 @@
+{% extends 'IngetisSiteBundle::Layout.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+{% block body %}
+
+
+<div id="body">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-8 ">
+                    {% block colleft %}{% endblock %}
+                </div>
+
+
+
+
+                <div class="col-md-4">
+                    <div id="colright"> 
+                            {% block colright %}{% endblock %}
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

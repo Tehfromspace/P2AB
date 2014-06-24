@@ -1,0 +1,7 @@
+parameters:
+#    ingetis_annonce.example.class: Ingetis\AnnonceBundle\Example
+
+services:
+#    ingetis_annonce.example:
+#        class: %ingetis_annonce.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

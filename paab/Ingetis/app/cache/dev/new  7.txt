@@ -1,0 +1,67 @@
+<div class="widget-area">
+	                        	<h2 id="candidature">
+	                                <a href="demande-doc.php">Déposez votre candidature</a>
+	                            </h2>
+	                            
+	                            <div class="block">
+	                                <img alt="" src="http://cdn1.iconfinder.com/data/icons/dellipack/48/people.png" class="alignleft">
+	                                <br>
+	                                <h2>Ingetis si vous êtes</h2>
+	                                <div class="clear"></div>
+	                                <ul class="menu_deco">
+	                                    <li><a href="demande-doc.php">Candidat</a></li>
+	                                    <li><a href="7/se-loger">Étudiant</a></li>
+	                                    <li><a href="17/contrat-de-professionnalisation">Entreprise</a></li>
+	                                    <li><a href="4/enseignants">Enseignant</a></li>
+	                                    <li><a href="#">Ancien élève</a></li>
+	                                </ul>
+	                            </div>
+	                            
+	                            <div class="block">
+	                                <img alt="" src="http://cdn1.iconfinder.com/data/icons/customicondesignoffice2/PNG/FAQ.png" class="alignleft">
+	                                <a href="http://ingetis.com/23/pourquoi-ingetis"><h2>Les Raisons de choisir Ingetis</h2></a>
+	                                <div class="clear"></div>
+	                            </div>
+
+	                            
+	                            <div class="block" style="text-align:center;">
+	                                <a href="http://ingetis.com/demande-doc.php">
+	                                    <img src="http://www.ingetis.com/images/site/boutton_etudiants.jpg" alt="Etudiant">
+	                                </a>
+	                            </div>
+	                            <div class="block" style="text-align:center;">
+	                                <a href="http://ingetis.com/contact-entreprises.php">
+	                                    <img src="http://itis-formation.com/images/site/boutton_entreprise.jpg" alt="Etudiant">
+	                                </a>
+	                            </div>
+	                            
+	                        </div>
+							
+							
+							{% extends 'IngetisSiteBundle::index.html.twig' %}
+
+
+{% block navbar %}
+
+
+    {{ render (controller ('IngetisNavbarBundle:Default:Navbar')) }}
+
+{% endblock %}
+
+
+{% block news %}
+
+    {{ render (controller ('IngetisNewsBundle:Default:News')) }}
+{% endblock %}
+
+{% block Carousel %}
+
+        {{ render (controller ('IngetisCarouselBundle:Default:Carousel')) }}
+
+{% endblock %}
+
+{% block Offres %}
+
+        {{ render ( controller ('IngetisOffresBundle:Default:Offres')) }}
+
+{% endblock %}
